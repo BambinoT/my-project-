@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    font-family: 'Roboto Slab', serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+h1{
+    color: green;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: sticky;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 17px;    
+}
+nav ul li a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: green;
+    transition: .4s;
+}
+span{
+    color: red;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: green;
+    font-size: 50px;
+    max-width: 450px;
+    text-align: center;
+    padding-top: 33px;
+}
+.bi-cart4{
+    color: red;
+    cursor: pointer;
+}
+.bi-heart{
+    color: red;
+    cursor: pointer;
+}
+.bi-cart4, .bi-heart{
+    justify-content: space-between;
+}
+.images{
+    display: flex;
+    padding: 70px;
+    animation-duration: 7s;
+    animation-name: image;
+    animation-iteration-count: infinite;
+}
+@keyframes image{
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-640px);
+    }
+    50% {
+        transform: translateX(-1280PX);
+    }
+    75% {
+        transform: translateX(-1920px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.diaporama{
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+.col-md-, .col-lg-4{
+    margin-bottom: 20px;
+}
+.card-title{
+    color: red;
+}
+.card-text{
+    color: green;
+   margin-left: 230px;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px black;
+}
+.babs h1{
+    color: red;
+    text-align: center;
+    padding-top: 33px;
+}
+.txt p{
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+.section img{
+    height: 350px;
+}
+.section{
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    margin: 10rem auto 0 auto;
+}
+.section h1{
+    margin: 0;
+    color: red;
+}
+.section p{
+    color: blue;
+}
+.delivery{
+    display: flex;
+}
+
+.bi-truck{
+    margin-top: 100px;
+    color: blue;
+}
+.delivery .job{
+    font-size: 19px;
+    color: blue;
+    margin-top: 100px;
+    margin-left: 12px;
+}
+.delivery .time{
+    font-size: 19px;
+    color: red;
+    margin-top: 100px;
+}
+.delivery .payment{
+    font-size: 19px;
+    margin-top: 100px;
+    color: greenyellow;
+}
+.bi-calendar-check-fill{
+ color: red;
+ margin-top: 100px;
+ margin-left: 55px;
+}
+.bi-cash-coin{
+ color: greenyellow;
+ margin-top: 100px;
+ margin-left: 55px;
+ 
+}
+.delivery .btn-primary{
+    margin-top: 100px;
+    margin-left: 44px;
+
+}
+.Bambino h2{
+    color: green;
+    text-align: center;
+    padding-top: 44px;
+    padding-bottom: 33px;
+}
+.Bambino .card-titre{
+    color: green;
+}
+.Bambino .card:hover{
+    transform: scale(1.00);
+    box-shadow: 0 0 40px -10px black;
+}
+.bi-star-fill{
+    color: green;
+}
+.card .bi-star-half{
+    color: green;
+
+}
+section#comment{
+    background: none;
+}
+section#comment .mum{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+section#comment .mum h3{
+    text-align: center;
+    font-size: 44px;
+    color: red;
+}
+section#comment .mum .avis{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 0;
+}
+section#comment .mum .avis .bloc{
+    text-align: center;
+    background: green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px green;
+    margin: 0 20px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#comment .mum .avis .bloc:hover{
+    transform: translateY(-10px);
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: red;
+}
+section#comment .mum .avis .bloc:hover h3, section#comment .mum .avis .bloc:hover p{
+    color: green;
+}
+section#comment .mum .avis .bloc p{
+    color: red;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.display-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px black;
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.username{
+    display: flex;
+}
+.username strong{
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.reviews .bi-star-fill, .bi-star-half{
+    color: green;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user-comment p{
+    font-size: 16px;
+    color: gray;
+    font-style: oblique;
+    font-weight: 500;
+}
+.display-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+section#contact{
+    padding: 100px 0;
+    background-color: white;
+}
+section#contact .formular{
+    max-width: 1100px;
+    margin: 0px auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px -10px green;
+    box-sizing: border-box;
+}
+section#contact .formular .title h6{
+    font-size: 1.1em;
+    color: green;
+}
+section#contact .formular .title h3{
+    font-size: 2.2em;
+    color: green;
+}
+section#contact .formular .title{
+    text-align: center;
+}
+form .tra{
+    width: 90%;
+    max-width: 600px;
+}
+section#contact .formular input{
+    margin-bottom: 33px;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black;
+    background: transparent;
+    font-size: 15px;
+}
+button{
+    padding: 10px 0;
+    margin-top: 21px;
+    color: green;
+    outline: none;
+    background: transparent;
+    border: solid green;
+    width: 100%;
+    cursor: pointer;
+}
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.formular .rows{
+    flex-basis: 48%;
+}
+.ROW{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenu{
+    max-width: 1170px;
+    background-color: rgb(231, 227, 227);
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 21px;
+    color: red;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: green;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: green;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0,3s ease;
+}
+.footer-col ul li a:hover{
+    color: red;
+    padding-left: 7px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+}
+.finish{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 50px;
+    flex-direction: row;
+}
+.finish .finish-top h3{
+    text-align: center;
+    justify-content: center;
+    font-size: 33px;
+    color: green;
+}
+.finish .finish-top {
+    text-align: center;
+    justify-content: center;
+    font-size: 21px;
+    color: green;
+}
